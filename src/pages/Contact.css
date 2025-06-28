@@ -1,0 +1,36 @@
+.contact-container {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(38,40,255,0.6), rgba(128,0,128,0.6)), #0e0b1e;
+  color: #fff;
+  text-align: center;
+  margin-top: 4rem;
+  border-radius: 10px;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-icons a {
+  color: #a48ce0;
+  font-size: 2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #d1b3ff;
+  transform: scale(1.2);
+}

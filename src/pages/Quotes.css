@@ -1,0 +1,216 @@
+.quotes-slider-section {
+  position: relative;
+  padding: 4rem 1rem;
+  background-color: #0e0e0e;
+  overflow: hidden;
+  color: white;
+}
+
+.quotes-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(135deg, #a855f7, #d8b4fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.quotes-slider {
+  display: flex;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 600px; /* Max container width */
+}
+
+.quotes-track {
+  display: flex;
+  animation: slideQuotes 30s linear infinite; /* Slower speed */
+}
+
+.quote {
+  min-width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #e0e0e0;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+@keyframes slideQuotes {
+  0% { transform: translateX(0%); }
+  25% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  58% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  91% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Floating Circles */
+.floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+  animation: floaty 8s ease-in-out infinite alternate;
+}
+
+.floating-circle.small {
+  width: 20px;
+  height: 20px;
+  background: #a855f7;
+  top: 15%;
+  left: 10%;
+}
+
+.floating-circle.medium {
+  width: 35px;
+  height: 35px;
+  background: #d8b4fe;
+  bottom: 20%;
+  right: 15%;
+}
+
+.floating-circle.large {
+  width: 50px;
+  height: 50px;
+  background: #9333ea;
+  top: 60%;
+  left: 25%;
+}
+
+@keyframes floaty {
+  from { transform: translateY(0); }
+  to { transform: translateY(20px); }
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .quote {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .quotes-slider {
+    max-width: 90%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .quote {
+    font-size: 1rem;
+    padding: 0 0.8rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+  .quote {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* .quotes-slider-section {
+  position: relative;
+  padding: 6rem 2rem;
+  background-color: #0e0e0e;
+  overflow: hidden;
+  color: white;
+}
+
+.quotes-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #a855f7, #d8b4fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.quotes-slider {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.quotes-track {
+  display: flex;
+  animation: slideQuotes 18s linear infinite;
+}
+
+.quote {
+  min-width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #e0e0e0;
+  padding: 0 3rem;
+}
+
+@keyframes slideQuotes {
+  0% { transform: translateX(0%); }
+  25% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  58% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  91% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Floating Circles */
+/* .floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+  animation: floaty 8s ease-in-out infinite alternate;
+}
+
+.floating-circle.small {
+  width: 25px;
+  height: 25px;
+  background: #a855f7;
+  top: 15%;
+  left: 10%;
+}
+
+.floating-circle.medium {
+  width: 40px;
+  height: 40px;
+  background: #d8b4fe;
+  bottom: 20%;
+  right: 15%;
+}
+
+.floating-circle.large {
+  width: 55px;
+  height: 55px;
+  background: #9333ea;
+  top: 60%;
+  left: 25%;
+}
+
+@keyframes floaty {
+  from { transform: translateY(0); }
+  to { transform: translateY(20px); }
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+} */
+
+

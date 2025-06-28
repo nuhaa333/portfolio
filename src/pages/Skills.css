@@ -1,0 +1,121 @@
+.skills-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+
+.skills-track {
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 0 1.5rem;
+  min-width: 140px;
+  color: white;
+}
+
+.skill p {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .skills-slider {
+    width: 95%;
+  }
+
+  .skill {
+    padding: 1.5rem;
+    min-width: 120px;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-slider {
+    width: 100%;
+  }
+
+  .skill {
+    padding: 1rem;
+    min-width: 100px;
+    margin: 0 0.8rem;
+  }
+}
+
+
+
+/* .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 80%;
+  margin: 4rem auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: white;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+} */
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+
+  .skill {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .skill p {
+    font-size: 0.8rem;
+  }
+}
