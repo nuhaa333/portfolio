@@ -15,7 +15,7 @@ function About() {
       <div className="about">
         <h2>About Me</h2>
         <img
-          src='/photo.jpg'
+          src='\IMG_20250629_194333.JPG'
           alt="Nuha Aaisha"
           className="about-img"
         />
@@ -25,6 +25,11 @@ function About() {
             I love exploring technologies like React, Node.js, Firebase, and I have experience with MongoDB, SQL, C++, and video editing.
             I’m a continuous learner always striving to improve my skills and create impactful digital solutions.
           </p>
+
+          <a href="/resume.pdf" download="Nuha_Aaisha_Resume.pdf" className="download-resume">
+               Download Resume
+          </a>
+
         </div>
       </div>
     </div>

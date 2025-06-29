@@ -95,6 +95,7 @@
   height: auto;
   border-radius: 50%;
   transition: transform 0.5s ease;
+  filter: blur(0.5px);
 }
 
 .about-img:hover {
@@ -107,6 +108,21 @@
   line-height: 1.8;
   color: #ccc;
 }
+.download-resume {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 10px;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.download-resume:hover {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+}
 
 @media (max-width: 768px) {
   .about {
@@ -118,6 +134,8 @@
     font-size: 1.2rem;
   }
 }
+
+
 
 
 /* .about {

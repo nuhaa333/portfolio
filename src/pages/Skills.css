@@ -7,6 +7,18 @@
   margin: 4rem auto;
   padding: 1rem;
 }
+.skills-section {
+  padding: 2rem;
+  text-align: center;
+}
+.skills-heading {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+   background: linear-gradient(135deg, #a855f7, #d8b4fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .skills-track {
   display: inline-flex;
