@@ -15,7 +15,7 @@ function About() {
       <div className="about">
         <h2>About Me</h2>
         <img
-          src='\IMG_20250629_194333.JPG'
+          src='\img.jpg'
           alt="Nuha Aaisha"
           className="about-img"
         />
@@ -26,7 +26,7 @@ function About() {
             I’m a continuous learner always striving to improve my skills and create impactful digital solutions.
           </p>
 
-          <a href="/resume.pdf" download="Nuha_Aaisha_Resume.pdf" className="download-resume">
+          <a href="/resume.pdf" download="nuha_aaisha.pdf" className="download-resume">
                Download Resume
           </a>
 
@@ -39,32 +39,3 @@ function About() {
 export default About;
 
 
-// import React from 'react';
-// import './About.css';
-
-// function About() {
-//     return (
-//         <div>
-//             <div className='head'>
-//                 <h1>About me</h1>
-//             </div>
-//             <div className='about'>
-//                 <div className='curved-bg'>
-//                     <div className='character'>
-//                         <img src='/photo.jpg' alt='character' className='character-img' />
-//                     </div>
-//                 </div>
-//                 <div className='abtp'>
-//                     <p>
-//                         I'm a curious creator and problem-solver with a love for clean code and smart design.
-//                         I build digital experiences that not only work seamlessly but feel great to use.
-//                         Whether it’s crafting engaging user interfaces or experimenting with new tech, I’m driven by the thrill of making something both beautiful and functional.
-//                         I love transforming ideas into something meaningful.
-//                     </p>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default About;
